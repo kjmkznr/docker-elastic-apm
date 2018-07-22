@@ -28,8 +28,6 @@ services:
   apm:
     build:
       context: apm-server/
-    volumes:
-      - ./apm-server/config/apm-server.yml:/usr/share/apm-server/apm-server.yml:ro
     ports:
       - "8200:8200"
     networks:
